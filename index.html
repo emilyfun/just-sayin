@@ -9,74 +9,88 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
- <style>
- body{
-  background-image: url('http://vignette4.wikia.nocookie.net/nyancat/images/b/b2/Nyan_Cat_19.jpg/revision/latest?cb=20131111080252');
-  background-size: cover;
-}
+<style>
+    body {
+           padding: 60px; 
+            font-family: "sans-serif"; 
+            color: #EDCCEB;
+            text-align: center;
+        background-image: url('http://vignette4.wikia.nocookie.net/nyancat/images/b/b2/Nyan_Cat_19.jpg/revision/latest?cb=20131111080252');
+        background-size: cover;
+    }
+     div{
+            box-shadow: 0px 0px 30px white;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto; 
+        }
 </style>
 
 <body>
 
     <div class="container" style="text-align:center; padding:100px;">
-        
+
         <div class="jumbotron">
-            
+
             <h1>Just Sayin'</h1>
-            
+
             <p style="margin-top:40px;">Just Wanted to tell you...</p>
-        
+<button onclick="countPeople()" class=wow bounceInUp>Name please</button>
         </div>
-        
-        <p>App By Emily Dresel</p> 
-        
+
+        <p>App By Emily Dresel</p>
+
     </div>
+
+ <div class="wow bounceInUp">
+                  Content to Reveal Here
+                  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  
+
     <link rel="stylesheet" href="css/animate.css">
-    
-<button onclick="countPeople()">Name please</button>
-    
+
     <script>
-        
-       alert("Hey! Click the button so I can get to know you better!"); 
-        
-        
+      
 
-    
-    
+
+
+
+
         function askName() {
-        var firstName = prompt("What is your first name?");
-        var lastName = prompt("What is your last name?");
-        alert(firstName + " " + lastName + " " + "you are a beautiful nyan cat! " + counter + " People have pushed this button.");
-        
+            var firstName = prompt("What is your first name?");
+            var lastName = prompt("What is your last name?");
+            alert(firstName + " " + lastName + " " + "you are a beautiful nyan cat! " + counter + " People have pushed this button.");
+
         }
-    
 
 
-         function countPeople() {
-              counter = counter + 1;
+
+        function countPeople() {
+            counter = counter + 1;
             askName();
-         }
-         
-         
-       
+        }
 
-   
-       var counter = 0;
-   </script>
 
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+
+        var counter = 0;
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 
 </html>
