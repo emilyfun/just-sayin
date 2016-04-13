@@ -13,7 +13,7 @@
         body {
             padding: 60px;
             font-family: "sans-serif";
-            color: #EDCCEB;
+            color: #CC99FF;
             text-align: center;
             background-image: url('http://vignette4.wikia.nocookie.net/nyancat/images/b/b2/Nyan_Cat_19.jpg/revision/latest?cb=20131111080252');
             background-size: cover;
@@ -41,29 +41,37 @@
         <div class="jumbotron">
 
             <h1>Just Sayin'</h1>
-
-            <p style="margin-top:40px;">Just Wanted to tell you...</p>
-            <button onclick="countPeople()" class="wow bounceInUp">Name please.</button>
-
-            <link rel="stylesheet" href="lib/animate.css">
-            <script src="https://ajax.googleapis.com/ajax/k
-            
-            libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-            <script src="lib/wow.js"></script>
-            <script src="lib/app.js"></script>
-            <input type="text" id="firstName" />
-            <input type="text" id="lastName" />
-
-            
-
-
-
-
-
+            <div class="intro-txt">
+                <p style="margin-top:40px;">Just Wanted to tell you...</p>
+                <button onclick="countPeople()" class="wow bounceInUp">Name please.</button>
+                <input type="text" id="firstName" />
+                <input type="text" id="lastName" />
+            </div>
+            <div class="game-intro" style="display:none">
+                <p>
+                    Nice to meet you, <span class="first-name-text">firstName</span> <span class="last-name-text">lastName</span>.
+                </p>
+                <button onclick="gameIntro()" class="wow bounceInLeft">Next</button>
+            </div>
+            <div class="actual-game" style="display:none">
+                <p>
+                    blah blah blah
+                </p>
+                <button onclick="actualGame()" class="wow bounceInDown" width="40" height="10"></button>
+            </div>
+            <div class="game-complete" style="display:none">
+                <p>
+                    bla bla bla
+                </p>
+            </div>
             <iframe width="10" height="10" src="https://www.youtube.com/embed/wZZ7oFKsKzY" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
+        <link rel="stylesheet" href="lib/animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="lib/wow.js"></script>
+        <script src="lib/app.js"></script>
+
 
 
 </html>
