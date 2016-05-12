@@ -50,16 +50,17 @@
             </div>
             <div class="game-intro" style="display:none">
                 <p>
-                    Nice to meet you, <span class="first-name-text">firstName</span> <span class="last-name-text">lastName</span>. Before I tell you the top-secret info,
-                    I need to make sure you are human.
+                    Nice to meet you, <span class="first-name-text">firstName</span> <span class="last-name-text">lastName</span>. Before I tell you the top-secret info, I need to make sure you are human.
                 </p>
                 <button onclick="gameIntro()" class="wow bounceInLeft">Next</button>
             </div>
             <div class="actual-game" style="display:none">
-                <p>
-                    blah blah blah
+                <p class="captcha">
                 </p>
-                <button onclick="actualGame()" class="wow bounceIn">Next</button>
+                <input type="text" class="captcha-text" />
+                <p class="correct" style="display:none">Good human!</p>
+                <p class="not-correct" style="display:none">Are you really a human?</p>
+                <button onclick="actualGame()" class="wow bounceIn" style="display:none">Next</button>
             </div>
             <div class="game-complete" style="display:none">
                 <p>
